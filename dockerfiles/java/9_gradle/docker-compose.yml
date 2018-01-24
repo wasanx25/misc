@@ -1,0 +1,9 @@
+version: '2'
+services:
+  app:
+    build:
+      context: '.'
+    volumes:
+      - '.:/app'
+      - '.gradle:/home/gradle/.gradle'
+    working_dir: '/app'
