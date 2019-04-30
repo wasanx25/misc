@@ -22,11 +22,7 @@ int main(int argc, const char *argv[])
   const char *abc = "abc";
   const char *def = "def";
 
-  const char *abcdef = concat(abc, def);
-
-  puts(abcdef);
-
-  free((void *)abcdef);
+  puts(concat(abc, def));
 
   return 0;
 }
